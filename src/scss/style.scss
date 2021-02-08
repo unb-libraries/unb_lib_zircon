@@ -71,7 +71,7 @@ header {
       &:focus-within,
       &:hover {
         background-color: inherit !important;
-        color: $unb-darkerred;
+        color: $unb-darkerred !important;
         box-shadow: none !important;
       }
     }
