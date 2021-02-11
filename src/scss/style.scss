@@ -65,7 +65,11 @@ header {
     }
 
     // Branding link.
-    & a.navbar-brand {
+    & a {
+      color: $unb-darkred !important;
+      font-weight: 400 !important;
+      text-transform: capitalize !important;
+
       &:active,
       &:focus,
       &:focus-within,
@@ -73,6 +77,7 @@ header {
         background-color: inherit !important;
         color: $unb-darkerred !important;
         box-shadow: none !important;
+        text-decoration: underline !important;
       }
     }
   }
