@@ -258,6 +258,9 @@ main[role="main"] {
 
     & div.views-exposed-form.block-views {
       width: 70%;
+      & label {
+        display: none;
+      }
 
       & div.form-type-textfield {
         width: 90%;
