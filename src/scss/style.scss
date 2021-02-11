@@ -79,7 +79,7 @@ header {
   // Main navigation.
   & div.region-header + nav.navbar {
     padding: 0px;
-    background-color: $unb-darkgray;
+    background-color: $unb-darkgray !important;
     font-weight: 500;
 
     & .container.main.mx-auto {
