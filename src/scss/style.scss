@@ -6,8 +6,8 @@
 body,
 .font-regular {
     font-family: 'ProximaNovaA-Regular', 'Century Gothic', AppleGothic, Arial, sans-serif;
+    color: $unb-darkgray;
 }
-
 // All links.
 a {
   border: 1px solid transparent;
@@ -18,8 +18,13 @@ a {
     text-decoration: none;
   }
 }
-// All input.
-input {
+// All labels.
+label {
+  margin-bottom: 0;
+}
+// All input and select.
+input,
+select {
   border-radius: .1rem !important;
   box-shadow: none !important;
 
@@ -40,9 +45,12 @@ a.btn {
 
   &:hover,
   &:focus,
-  &:active {
+  &:active,
+  &:visited,
+  &:disabled {
     background-color: $unb-darkred !important;
     border-color: $unb-darkred !important;
+    opacity: 1 !important;
   }
 }
 
@@ -214,11 +222,9 @@ main[role="main"] {
       opacity: 1;
       border: none !important;
     }
-
-
-
     // Give images in content region an instant photo look.
-    & img {
+    & img:not(.image-style-slideshow) {
+      margin: 1rem;
       max-width: 100%;
       height: auto;
       object-fit: cover;
@@ -286,9 +292,32 @@ main[role="main"] {
     }
     // View header.
     div.view-header {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
       padding-bottom: 0.5em;
       border-bottom: 1px solid $unb-halfgray;
       color: $unb-gray;
+    }
+    // 'View empty' content.
+    .view-empty {
+      margin-top: 1rem;
+    }
+    // View exposed filters form.
+    div.view-filters {
+      div.form-item {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        width: 24%;
+
+        .form-control {
+          margin: 0;
+        }
+      }
+
+      #edit-actions {
+        display: inline-block;
+        margin-top: 2rem;
+      }
     }
     // Main content block.
     & div.block-system-main-block {
@@ -405,7 +434,7 @@ main[role="main"] {
 
     & a:hover,
     & a:focus {
-      color: $unb-turquoise !important;
+      color: inherit !important;
     }
   }
 }
@@ -486,7 +515,7 @@ footer > div.container {
   header {
     width: 690px;
   }
-  // Exposed search.
+  // Exposed search block.
   div.views-exposed-form.block-views {
     width: 70%;
 
@@ -496,6 +525,17 @@ footer > div.container {
   }
 }
 @media (max-width: 768px) {
+  // View exposed filters form.
+  div.view-filters {
+    div.form-item {
+      display: block;
+      width: 100% !important;
+
+      .form-control {
+        margin: 0;
+      }
+    }
+  }
   // Footer.
   #footer-copy p {
     padding-top: 1rem;
