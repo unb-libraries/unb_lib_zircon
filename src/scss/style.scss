@@ -53,6 +53,26 @@ a.btn {
     opacity: 1 !important;
   }
 }
+// Node edit preview.
+.node-preview-container {
+  position: relative;
+  // Links.
+  & a {
+    color: $unb-darkred !important;
+    font-weight: 400 !important;
+    text-transform: capitalize !important;
+
+    &:active,
+    &:focus,
+    &:focus-within,
+    &:hover {
+      background-color: inherit !important;
+      color: $unb-darkerred !important;
+      box-shadow: none !important;
+      text-decoration: underline !important;
+    }
+  }
+}
 
 // Header.
 header {
@@ -71,7 +91,6 @@ header {
       line-height: 1.5;
       color: $unb-darkred;
     }
-
     // Branding link.
     & a {
       color: $unb-darkred !important;
@@ -283,6 +302,10 @@ main[role="main"] {
           height: calc(1.5em + 0.75rem + 2px);
         }
       }
+    }
+    // IEF forms.
+    .ief-form > div > div.form-wrapper {
+      margin-top: .5rem;
     }
     // Browse block.
     & div.views-exposed-form.block-views + div.block {
