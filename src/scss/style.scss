@@ -398,8 +398,8 @@ main[role="main"] {
       background-color: $unb-halfgray;
       // Headers.
       & h1,
-      & h2 {
-        font-size: 1.4em;
+      & h2:not(.multi-h2) {
+        font-size: 1.4rem;
       }
       // Links.
       & a {
