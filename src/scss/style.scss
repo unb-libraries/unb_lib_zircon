@@ -7,6 +7,26 @@ body,
 .font-regular {
     font-family: 'ProximaNovaA-Regular', 'Century Gothic', AppleGothic, Arial, sans-serif;
     color: $unb-darkgray;
+    // Global header sizing.
+    h1,
+    h1.display-4,
+    h1 > span,
+    .navbar-brand .site-title {
+      font-size: 1.8rem;
+    }
+    h2 {
+      font-size: 1.4rem;
+    }
+    h3 {
+      font-size: 1.2rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    h5 {
+      font-size: 1rem;
+    }
+
 }
 // Table-formatted views.
 .views-table {
@@ -84,12 +104,10 @@ header {
   // Branding.
   & div.block-system-branding-block {
     & a {
-      font-size: 1.5rem !important;
       font-weight: 400;
     }
 
     & h1 {
-      font-size: 1.5rem !important;
       font-weight: 400;
       line-height: 1.5;
       color: $unb-darkred;
@@ -353,11 +371,8 @@ main[role="main"] {
       // Titles/headers.
       & h1 {
         display: inline-table;
+        margin-top: 1rem;
         margin-bottom: 1rem;
-        font-size: 1.5rem;
-      }
-      & h2 {
-        font-size: 1.2rem;
       }
       // Subtitles.
       .node-subtitle {
@@ -390,22 +405,17 @@ main[role="main"] {
       }
 
       & h1 {
+        margin-top: 2rem;
         padding-left: 3%;
         text-align: left !important;
-        font-size: 1.5rem;
         font-weight: 500;
         line-height: 1.2;
       }
     }
 
     // Blocks except main content and titles.
-    & div.block:not(#block-mainpagecontent) {
+    & div.block:not(#block-mainpagecontent):not(.block-page-title-block) {
       background-color: $unb-halfgray;
-      // Headers.
-      & h1,
-      & h2:not(.multi-h2) {
-        font-size: 1.4rem;
-      }
       // Links.
       & a {
         color: $unb-darkred;
@@ -425,10 +435,6 @@ main[role="main"] {
     // Facet blocks.
     & div.block.block-facets {
       padding: 1em 1.4em;
-
-      & h3 {
-        font-size: 1em;
-      }
 
       & ul.js-facets-links {
         list-style-type: none;
