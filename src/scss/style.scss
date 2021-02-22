@@ -115,7 +115,6 @@ header {
     }
 
     & h1 {
-      font-weight: 400;
       line-height: 1.5;
       color: $unb-darkred;
     }
@@ -268,7 +267,7 @@ main[role="main"] {
       border: none !important;
     }
     // Give images in content region an instant photo look.
-    & img:not(.image-style-slideshow) {
+    & img:not([class^="image-style-slideshow"]) {
       margin: 1rem;
       max-width: 100%;
       height: auto;
