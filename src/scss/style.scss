@@ -14,17 +14,20 @@ body,
     .navbar-brand .site-title {
       font-size: 1.8rem;
     }
-    h2 {
+    h2,
+    h2 > a {
       font-size: 1.4rem;
     }
-    h3 {
+    h3,
+    h3 > a {
+      font-size: 1.3rem;
+    }
+    h4,
+    h4 > a {
       font-size: 1.2rem;
     }
-    h4 {
-      font-size: 1rem;
-    }
     h5 {
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
     h6 {
       font-size: 1rem;
@@ -211,7 +214,6 @@ main[role="main"] {
   // Content.
   & div.region.region-content {
     padding: 0;
-
     // Slideshow.
     & div.views_slideshow_slide,
     & div.views_slideshow_cycle_teaser_section {
@@ -280,6 +282,19 @@ main[role="main"] {
     // Blocks.
     & div.block {
       margin-top: 0.7em;
+      // Facet headers.
+      &.block-facets {
+        h1 {
+          font-size: 1.4rem;
+        }
+        h2 {
+          font-size: 1.2rem;
+        }
+        h3, h4, h5, h6 {
+          font-size: 1rem;
+          font-weight: normal;
+        }
+      }
       // Links.
       & a:not(.btn),
       & a:not(.btn):focus {
@@ -382,6 +397,10 @@ main[role="main"] {
       .node-subtitle {
         font-size: 1.4rem;
       }
+      // Views contextual region.
+      .views-element-container.contextual-region {
+        margin-top: 2rem;
+      }
       // Paragraph.
       & .field--name-body p {
         text-align: justify;
@@ -390,24 +409,21 @@ main[role="main"] {
       & dl {
         margin-bottom: 1.5rem;
       }
-
       // Paragraph.
       & .field--name-body p {
         text-align: justify;
       }
-
       // Nodes.
       div.node__content {
         margin-top: 1em;
       }
     }
+
     // Titles.
     & div.block.block-page-title-block {
-
       & em {
         font-style: normal !important;
       }
-
       & h1 {
         margin-top: 2rem;
         padding-left: 3%;
@@ -435,7 +451,6 @@ main[role="main"] {
         min-height: 3rem;
       }
     }
-
     // Facet blocks.
     & div.block.block-facets {
       padding: 1em 1.4em;
