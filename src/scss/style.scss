@@ -524,7 +524,7 @@ footer > div.container {
 // Responsive.
 @media (min-width: 1200px) {
   // Header.
-  header {
+  header, footer > .container {
     width: 1110px;
   }
 }
@@ -546,7 +546,7 @@ footer > div.container {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   // Header.
-  header {
+  header, footer > .container {
     width: 930px;
   }
 }
@@ -561,7 +561,7 @@ footer > div.container {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   // Header.
-  header {
+  header, footer > .container {
     width: 690px;
   }
   // Exposed search block.
@@ -593,7 +593,7 @@ footer > div.container {
 }
 @media (min-width: 500px) and (max-width: 767px) {
   // Header.
-  header {
+  header, footer > .container {
     width: 510px;
   }
   // Exposed search.
@@ -607,7 +607,7 @@ footer > div.container {
 }
 @media (max-width: 540px) {
   // Header.
-  header {
+  header, footer > .container {
     margin: 0 .5rem;
     width: 100%;
   }
