@@ -140,6 +140,7 @@ header {
   & div.region-header + nav.navbar {
     padding: 0px;
     background-color: $unb-darkgray !important;
+    line-height: 1;
     font-weight: 500;
 
     & .container.main.mx-auto {
@@ -156,7 +157,8 @@ header {
       &:focus-within,
       &:hover {
         background-color: $unb-darkerred !important;
-        border: 1px solid $unb-darkerred;
+        border-top: 1px solid $unb-darkerred;
+        border-bottom: 1px solid $unb-darkerred;
         box-shadow: none !important;
         cursor: pointer;
       }
@@ -178,12 +180,14 @@ header {
 
     & ul.dropdown-menu {
       background-color: $unb-darkgray;
+      padding: 0;
       border-radius: .1rem;
       border: none;
 
       & a {
         white-space: nowrap;
         color: $unb-halfgray;
+        line-height: .4;
       }
     }
 
@@ -546,6 +550,12 @@ footer > div.container {
   }
 }
 @media (max-width: 991px) {
+  // Main menu.
+  #block-mainnavigation {
+    .dropdown-menu {
+      background-color: $unb-gray;
+    }
+  }
   // Browse block.
   div.views-exposed-form.block-views + div.block  {
     height: 9.75em;
