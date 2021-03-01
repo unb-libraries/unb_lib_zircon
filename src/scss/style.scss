@@ -551,9 +551,9 @@ footer > div.container {
 }
 @media (max-width: 991px) {
   // Main menu.
-  #block-mainnavigation {
+  .menu--main {
     .dropdown-menu {
-      background-color: $unb-gray;
+      background-color: $unb-gray !important;
     }
   }
   // Browse block.
