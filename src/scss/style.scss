@@ -333,7 +333,13 @@ main[role="main"] {
     & div.views-exposed-form.block-views {
       width: 70%;
       & label {
-        display: none;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
       }
 
       & div.form-type-textfield {
