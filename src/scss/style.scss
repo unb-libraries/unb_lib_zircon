@@ -382,6 +382,12 @@ main[role="main"] {
     }
     // View exposed filters form.
     div.view-filters {
+      fieldset {
+        div.form-item {
+          width: auto !important;
+        }
+      }
+
       div.form-item {
         margin-top: .5rem;
         margin-bottom: .5rem;
