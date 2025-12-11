@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // Override default bootstrap colors for accessibility
 $white: #fff !default;
 $black: #000 !default;
@@ -10,13 +12,13 @@ $breadcrumb-active-color: $cyan !default;
 $navbar-light-color: $white !default;
 $navbar-dark-color: $black !default;
 
-// Bootstrap variables (overrides).
+// Bootstrap variables (overrides)
 $primary: $blue !default;
 $secondary: $cyan !default;
 $light: $white !default;
 $body-color: $white !default; 
 
-// General.
+// General
 $form-text-margin-top: 0;
 $legend-font-size: 1rem;
 $table-cell-padding-x: .75rem;

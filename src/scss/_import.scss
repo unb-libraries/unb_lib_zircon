@@ -1,12 +1,9 @@
 // Sub theme styling.
-@import 'variables_drupal';
+@use 'variables_drupal';
 
 // Bootstrap overridden variables.
 // @see https://getbootstrap.com/docs/5.2/customize/sass/#variable-defaults.
-@import 'variables_bootstrap';
-
-// Include bootstrap 5.
-@import '../../../../../vendor/drupal/bootstrap/scss/style';
+@use 'variables_bootstrap';
 
 // Custom mixins.
-@import 'mixins';
+@use 'mixins';

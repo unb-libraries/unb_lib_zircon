@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // Theme variables.
 $navbar-brand-image-height: 36px !default;
 $navbar-brand-image-height-lg: 60px !default;
@@ -19,4 +21,29 @@ $local-tasks-secondary-margin: 0 0 1rem 0 !default;
 
 $table-striped-bg: #f9f9f9 !default;
 
-// Custom theme variables.
+/* Custom theme variables. */
+/* Legacy 11.x-bootstrap-4.x */
+/* UNB colours (2016) */
+$unb-red: #f00000;
+$unb-purple: #573393;
+$unb-pink: #ea368e;
+$unb-cherry: #d30c55;
+$unb-orange: #ec692f;
+$unb-mango: #ed8b00;
+$unb-honey: #ffc709;
+$unb-citrus: #f5eb00;
+$unb-green: #84bd00;
+$unb-aqua: #78cbc4;
+$unb-sky: #0085ef;
+$unb-turquoise: #007fa3;
+$unb-denim: #0044a5;
+$unb-gray: #586770;
+
+// Custom colours.
+$unb-darkred: color.adjust($unb-red, $lightness: -5%);
+$unb-darkerred: color.adjust($unb-red, $lightness: -15%);
+$unb-darkgray: color.adjust($unb-gray, $lightness: -15%);
+$unb-halfgray: #ececeb;
+$unb-25gray: color.adjust($unb-gray, $lightness: 25%);
+$unb-halfaqua: color.adjust($unb-aqua, $lightness: -25%);;
+$offwhite: #f8f9fa;
