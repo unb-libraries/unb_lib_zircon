@@ -1,14 +1,11 @@
-core: 8.x
-core_version_requirement: ^8 || ^9
+name: 'UNB Libraries Zircon'
 type: theme
-name: 'unb_lib_zircon'
-package: 'unb_lib_zircon'
-description: 'UNB Libraries red + gray colour theme'
-base theme: bootstrap4
-
+description: 'UNB Libraries subtheme of Bootstrap 5.'
+core_version_requirement: ^9 || ^10 || ^11
+base theme: bootstrap
 libraries:
   - unb_lib_zircon/global-styling
-
+  - unb_lib_zircon/global-scripts
 regions:
   header: Header
   nav_branding: 'Navigation branding region'
@@ -19,3 +16,5 @@ regions:
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
   footer: Footer
+libraries-override:
+  bootstrap/global-styling: false

@@ -1,0 +1,22 @@
+// Override default bootstrap colors for accessibility
+$white: #fff !default;
+$black: #000 !default;
+$blue: #003CC5 !default;
+$cyan: #006170 !default;
+$pink: #e21181 !default;
+$green: #008a00 !default;
+$breadcrumb-divider-color: $black !default;
+$breadcrumb-active-color: $cyan !default;
+$navbar-light-color: $white !default;
+$navbar-dark-color: $black !default;
+
+// Bootstrap variables (overrides).
+$primary: $blue !default;
+$secondary: $cyan !default;
+$light: $white !default;
+$body-color: $white !default; 
+
+// General.
+$form-text-margin-top: 0;
+$legend-font-size: 1rem;
+$table-cell-padding-x: .75rem;

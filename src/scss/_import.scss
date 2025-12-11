@@ -1,12 +1,12 @@
-// Bootstrap customization components.
-@import "../../../../../vendor/twbs/bootstrap/scss/functions";
-@import "../../../../../vendor/twbs/bootstrap/scss/variables";
+// Sub theme styling.
+@import 'variables_drupal';
 
-// Variable overrides.
-@import 'overrides/variables';
+// Bootstrap overridden variables.
+// @see https://getbootstrap.com/docs/5.2/customize/sass/#variable-defaults.
+@import 'variables_bootstrap';
 
-// Custom variables.
-@import 'custom/variables';
+// Include bootstrap 5.
+@import '../../../../../vendor/drupal/bootstrap/scss/style';
 
-// Bootstrap v4.x.
-@import "../../../../../vendor/twbs/bootstrap/scss/bootstrap.scss";
+// Custom mixins.
+@import 'mixins';
